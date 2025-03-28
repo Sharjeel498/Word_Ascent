@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 from Adder import Adder
 from Tester import Tester
 
@@ -12,7 +13,7 @@ class Interface:
         large_font = ("Times", 25)
 
         self.start_frame = tk.Frame(root, bg="lightblue")
-        tk.Label(self.start_frame, text="            Welcome to Word Asend            ", font= large_font, bg="lightblue").grid(row= 0, columnspan= 3 , padx=10, pady=10)
+        tk.Label(self.start_frame, text="            Welcome to Word Ascend            ", font= large_font, bg="lightblue").grid(row= 0, columnspan= 3 , padx=10, pady=10)
         tk.Label(self.start_frame, text="To add a word to your vocabulary, press Add. \n Alternatively, press Test to test your knowledge.", font= large_font, bg="lightblue").grid(row= 1, columnspan= 3, rowspan=2, padx=10, pady=5)
         tk.Button(self.start_frame, text= "Add", font=large_font, width=7, command= lambda: self.show("Add")).grid(row= 4, column= 0, padx= 10, pady= 10)
         tk.Button(self.start_frame, text="Test", font= large_font, width=7, command= lambda: self.show("Test")).grid(row = 4, column= 1, padx=10, pady= 10)
